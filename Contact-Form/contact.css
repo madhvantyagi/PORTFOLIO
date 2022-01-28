@@ -2,12 +2,17 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2c2c2c;
 }
 
 .contact-form{
     background-color: #222222;
     max-height: fit-content;
-    max-width: 769.5px;
+    max-width: 52vw;
     margin: auto;
     display: flex;
     align-items: center;
@@ -15,12 +20,13 @@
     transform: translateY(20vh);
     /* border: solid 2px red; */
     border-radius: 10px;
-    padding: 20px 0px;
+    padding: 20px 30px;
     font-size: 30px;
 }
 
 #contact-me-heading{
     color: #fff;
+    background-color: #222222;
 }
 
 .form-entries{
@@ -30,7 +36,7 @@
 }
 
 .form-name, .form-email{
-    margin-right: 60px;
+    margin-right: 4vw;
 }
 
 .form-email{
@@ -38,28 +44,48 @@
 }
 
 #name, #email{
-    width: 299.15px;
-    height: 48.28px;
+    width: 20rem;
+    height: 6.5vh;
     border: none;
     border-radius: 5px;
     padding: 0px 5px;
     font-size: 18px;
+    background-color: #fff;
+    outline: none;
 }
+
+#name:focus{
+    border: 1px solid rgb(71, 99, 255);
+}
+
+#email:focus{
+    border: 1px solid rgb(255, 122, 135);
+}
+
+#message:focus{
+    border: 1px solid rgb(161, 255, 169);
+}
+
 #message{
     resize: none;
     padding: 5px;
     overflow-y: scroll;
-    width: 299.15px;
-    height: 293.1px;
+    max-width: 20rem;
+    height: 40vh;
     border: none;
     border-radius: 5px;
     font-size: 18px;
+    background-color: #fff;
+    outline: none;
 }
 
 .form-send{
-    border: yellow solid 1px;
-    display: flex;
-    height: 48.28px;
+    /* border: yellow solid 1px; */
+    display: flexbox;
+    height: 3.1rem;
+    position: absolute;
+    bottom: 3.5vh;
+    left: 6.5vw;
 }
 
 .form-send-btn{
@@ -69,4 +95,15 @@
     border: none;
     padding: 10px 80px;
     font-size: 18px;
+}
+
+.contact-filler{
+    font-size: 300px;
+    /* border: yellow solid 1px; */
+    font-weight: bold;
+
+    -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.165);
+    
 }
