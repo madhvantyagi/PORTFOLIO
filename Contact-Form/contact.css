@@ -12,7 +12,8 @@ body{
 .contact-form{
     background-color: #222222;
     max-height: fit-content;
-    max-width: 52vw;
+    width: 52vw;
+
     margin: auto;
     display: flex;
     align-items: center;
@@ -20,13 +21,15 @@ body{
     transform: translateY(20vh);
     /* border: solid 2px red; */
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 2vh 3vw;
     font-size: 30px;
+    border: blue solid 1px;
 }
 
 #contact-me-heading{
     color: #fff;
     background-color: #222222;
+    border: blue solid 1px;
 }
 
 .form-entries{
@@ -37,14 +40,16 @@ body{
 
 .form-name, .form-email{
     margin-right: 4vw;
+    border: blue solid 1px;
 }
 
 .form-email{
-    margin-top: 50px;
+    margin-top: 5vh;
 }
 
 #name, #email{
-    width: 20rem;
+    /* border: solid 1px blue; */
+    width: 20vw;
     height: 6.5vh;
     border: none;
     border-radius: 5px;
@@ -72,7 +77,8 @@ body{
     overflow-y: scroll;
     max-width: 20rem;
     height: 40vh;
-    border: none;
+    border:  skyblue solid 2px;
+    /* border: none; */
     border-radius: 5px;
     font-size: 18px;
     background-color: #fff;
@@ -80,7 +86,7 @@ body{
 }
 
 .form-send{
-    /* border: yellow solid 1px; */
+    border: yellow solid 1px;
     display: flexbox;
     height: 3.1rem;
     position: absolute;

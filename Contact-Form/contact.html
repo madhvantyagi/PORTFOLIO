@@ -13,32 +13,30 @@
 <body>
 
         <div class="contact-form">
-                <p id="contact-me-heading">Contact Me:</p>
-                <br><br>
+            <p id="contact-me-heading">Contact Me:</p>
+            <br><br>
 
-                <div class="form-entries">
+            <form class="form-entries" action="" method="POST">
+                <div id="form-name-email-entry">
 
-                    <div id="form-name-email-entry">
-
-                        <div class="form-name">
-                            <input type="text" name="name" id="name" placeholder="Name">
-                        </div>
-
-                        <div class="form-email">
-                            <input type="email" name="email" id="email" placeholder="Email">
-                        </div>
-
+                    <div class="form-name">
+                        <input type="text" name="name" id="name" placeholder="Name">
                     </div>
 
-                    <div id="form-message-entry">
-                        <textarea name="textarea" rows="10" cols="40" id="message" placeholder="Message"></textarea>
-                    </div>
-
-                    <div class="form-send">
-                        <button type="submit" class="form-send-btn">Send</button>
+                    <div class="form-email">
+                        <input type="email" name="email" id="email" placeholder="Email">
                     </div>
 
                 </div>
+
+                <div id="form-message-entry">
+                    <textarea name="textarea" rows="10" cols="40" id="message" placeholder="Message"></textarea>
+                </div>
+
+                <div class="form-send">
+                    <button type="submit" class="form-send-btn">Send</button>
+                </div>
+            </form>
         </div>
 
         <div class="contact-filler">
