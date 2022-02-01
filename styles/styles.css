@@ -71,7 +71,6 @@ display: inline;
     display: inline-block;
     font-family: Roboto;
     font-style: normal;
-<<<<<<< HEAD
     right:15vw;
     bottom:40vh;
   
@@ -94,11 +93,6 @@ display: inline;
     right:10vw;
     bottom :0vh;
 
-=======
-    font-weight: 50;
-    font-size: 98px;
-    line-height: 117px;
->>>>>>> a753cd4c6113d4e73b3a8ff660046e73b5a151b2
 }
 
 
@@ -115,7 +109,6 @@ font-size: calc(3vw + 4vh);
  
 }
 
-<<<<<<< HEAD
 /* <--------- testing css --------->   */
 #test{
     height: 100vh;
@@ -133,9 +126,3 @@ font-size: calc(3vw + 4vh);
 .four{
     border:solid 2px green;
 }
-=======
-#who-am-i{
-    font-size: 98px;
-}
-
->>>>>>> a753cd4c6113d4e73b3a8ff660046e73b5a151b2
