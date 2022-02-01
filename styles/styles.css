@@ -2,70 +2,55 @@
     --color: #B960FF;;
 }
 
-
 *{
     margin: 0;
     border: 0;
     color: #ffffff;
     font-family: 'Roboto', 'Open Sans', 'Source Code Pro', sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body{
     background-color: #2c2c2c;
 }
 
-#frt-div{
 
+#frt-div{
     background-image: url(/home-map-bg.svg);
     background-repeat: no-repeat;
     padding:1rem;
     background-position:center;
-   height: 100vh;
-       background-size:contain;
+    height: 100vh;
+    background-size:contain;
     align-items: center;
     align-content: center;
-
 }
-
 
 .nav-bar{
-
-    list-style: none;
-      
+    font-weight: 300;
+    list-style: none; 
 }
-
-
 
 .outside-div{
-text-align: right;
+    text-align: right;
     /* width: 10%; */
-/* margin-right: 0px; */
-padding:2.0vh 0 2.0vh 0;
- background-color: black;
-
+    /* margin-right: 0px; */
+    padding:2.0vh 0 2.0vh 0;
+    background-color: black;
 }
-
-
 
 .nav-bar-item{
-    margin-right:2%;
-display: inline;
-
-    
+    cursor: pointer;
+    margin-right:3.5%;
+    display: inline;
 }
-
-
-
-
 
 #hello{
     color:var(--color);
 }
 
-
 .home-intro{
-
     /* border:solid 2px red; */
     position:absolute;
     display: inline-block;
@@ -73,8 +58,8 @@ display: inline;
     font-style: normal;
     right:15vw;
     bottom:40vh;
-  
 }
+
 .web-intro{
     position:absolute;
     display: inline-block;
@@ -82,19 +67,16 @@ display: inline;
     font-style: normal; 
     right:18vw;
     bottom:10vh;
-
 }
-#web{
 
+#web{
     font-family: 'Montserrat', sans-serif;
     text-decoration: underline;
     font-size: calc(3vw + 4vh);
     /* font-weight: 1; */
     right:10vw;
     bottom :0vh;
-
 }
-
 
 .widden{
     color:var(--color);
@@ -102,27 +84,84 @@ display: inline;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Permanent Marker', cursive;
     font-family: 'Neonderthaw', cursive;
-
 }
+
 .who-am-i{
-font-size: calc(3vw + 4vh);
- 
+    font-size: calc(3vw + 4vh);
 }
 
 /* <--------- testing css --------->   */
 #test{
     height: 100vh;
     margin-top: 10px;
-
 }
+
 .two{
     border:solid 2px red;
+    position: relative;
+}
+
+.filler-iot{
+    font-size: calc(9vh + 15vw);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.35);
+
+    position: absolute;
+    top: 3vh;
+    left: 3vw;
+
+
 }
 
 .three{
     border:solid 2px blue;
+    position: relative;
+}
+
+#eqn1{
+    position: absolute;
+    -webkit-user-drag: none;
+    /* object-fit: cover; */
+    top: 42%;
+    left: 35%;
+    height: 5vh;
+    width: 65%;
+}
+
+#eqn2{
+    position: absolute;
+    -webkit-user-drag: none;
+    top: 50%;
+    height: 5vh;
 }
 
 .four{
     border:solid 2px green;
+    position: relative;
+}
+
+.filler-dev{
+    position: relative;
+    font-size: 34vh;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.316);
+    top: 10vh;
+    left: 2vw;
+}
+
+.filler-competitive{
+    position: relative;
+    font-size: 34vh;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.316);
+    top: 14vh;
+    left: 20vw;
+}
+
+.five{
+    border: solid 1px #B960FF;
+    position: relative;
 }
