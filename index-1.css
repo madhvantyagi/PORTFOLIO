@@ -1,0 +1,47 @@
+.outer{
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(51, 46, 46);
+    margin:auto;
+    transform: translateY(20vh);
+    border-radius: 1rem;
+}
+
+.topper{
+    border-radius: 1rem 1rem 0 0;
+    display: flex;
+    background-color: grey;
+    width:50vw;
+    height: 3vh;
+}
+.circle{
+    margin:0.2rem;
+
+}
+.code-box{
+    border:solid 2px red;
+    color:rgba(255, 255, 255, 0.815);
+    font-family: 'Abel', sans-serif;
+    font-size: calc(0.5vw + 0.5vh);
+}
+
+#circle-1{
+background-color: rgba(255, 0, 0, 0.644);
+height:1.5vh;
+width:1.2vw;
+border-radius: 100%;
+}
+
+#circle-2{
+background-color: rgba(0, 128, 0, 0.678);
+height:1.5vh;
+width:1.2vw;
+border-radius: 100%;
+}
+
+#circle-3{
+background-color: rgba(0, 0, 255, 0.692);
+height:1.5vh;
+width:1.2vw;
+border-radius: 100%;
+}
