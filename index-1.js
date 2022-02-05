@@ -5,6 +5,7 @@ codebox.textContent = "";
 
 var code_arr = ["the setup function runs once when you press reset or power the board void setup()", "// initialize digital pin LED_BUILTIN as an output. ", "pinMode(LED_BUILTIN, OUTPUT); ", "} ", "// the loop function runs over and over again forever ", " void loop() { </pigitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level) ", " delay(1000);                       // wait for a second ", " digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW ", "  delay(1000);                       // wait for a second ", " } "];
 var code_arr2 = ["this is our new experiment that we can do about in our generation ", "quantum code in our froozen cosmos ", "new line of hacking begin"];
+
 var count = 0, i = 0, reminder = 0;
 var int1 = 1, int2 = 0,  count2 = 0, h = 0 ,count3=0,g=0;
 // console.log(code_arr[9]);
