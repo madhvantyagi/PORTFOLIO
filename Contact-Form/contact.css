@@ -21,15 +21,15 @@ body{
     transform: translateY(20vh);
     /* border: solid 2px red; */
     border-radius: 10px;
-    padding: 2vh 3vw;
-    font-size: 30px;
-    border: blue solid 1px;
+    padding: 2vh 2.6vw;
+    font-size: 3.8vh;
+    /* border: blue solid 1px; */
 }
 
 #contact-me-heading{
     color: #fff;
     background-color: #222222;
-    border: blue solid 1px;
+    /* border: blue solid 1px; */
 }
 
 .form-entries{
@@ -40,7 +40,7 @@ body{
 
 .form-name, .form-email{
     margin-right: 4vw;
-    border: blue solid 1px;
+    /* border: blue solid 1px; */
 }
 
 .form-email{
@@ -53,22 +53,27 @@ body{
     height: 6.5vh;
     border: none;
     border-radius: 5px;
-    padding: 0px 5px;
-    font-size: 18px;
+    padding: 0vh 0.5vw;
+    font-size: 2.4vh;
     background-color: #fff;
     outline: none;
 }
 
 #name:focus{
-    border: 1px solid rgb(71, 99, 255);
+    border: 2px solid #4763ff;
+    box-shadow: 0px 0px 0.2vh 0.2vw #4763ff43;
+    border-style: outset;
 }
 
 #email:focus{
-    border: 1px solid rgb(255, 122, 135);
+    border: 2px solid rgb(255, 122, 135);
+    box-shadow: inset 0px 0px 40px 40px #DBA632;
 }
 
 #message:focus{
-    border: 1px solid rgb(161, 255, 169);
+    border: 2px solid rgb(161, 255, 169);
+    box-shadow: inset 0px 0px 40px 40px #DBA632;
+
 }
 
 #message{
@@ -79,31 +84,30 @@ body{
     /* min-width: 10vw; */
     height: 40vh;
     width: 20vw;
-    border:  skyblue solid 2px;
+    /* border:  skyblue solid 2px; */
     /* border: none; */
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 2.4vh;
     background-color: #fff;
     outline: none;
 }
 
 .form-send{
-    border: yellow solid 1px;
+    /* border: yellow solid 1px; */
     display: flexbox;
-    height: 2vh;
-    width: 10vw;
     position: absolute;
     bottom: 3.5vh;
-    left: 6.5vw;
+    left: 9.5vw;
 }
 
 #form-send-btn{
     background-color: rgba(128, 30, 205, 0.54);
+    cursor: pointer;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 0.8vh;
     border: none;
     padding: 1vh 3vw;
-    font-size: 18px;
+    font-size: 2.5vh;
 }
 
 .contact-filler{

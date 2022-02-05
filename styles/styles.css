@@ -2,79 +2,66 @@
     --color: #B960FF;;
 }
 
-
 *{
     margin: 0;
     border: 0;
     color: #ffffff;
     font-family: 'Roboto', 'Open Sans', 'Source Code Pro', sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body{
     background-color: #2c2c2c;
 }
 
-#frt-div{
 
+#frt-div{
     background-image: url(/home-map-bg.svg);
     background-repeat: no-repeat;
     padding:1rem;
     background-position:center;
-   height: 100vh;
-       background-size:contain;
+    height: 100vh;
+    background-size:contain;
     align-items: center;
     align-content: center;
-
 }
-
 
 .nav-bar{
-
-    list-style: none;
-      
+    font-weight: lighter;
+    font-size: 2.6vh;
+    list-style: none; 
 }
-
-
 
 .outside-div{
-text-align: right;
+    text-align: right;
     /* width: 10%; */
-/* margin-right: 0px; */
-padding:2.0vh 0 2.0vh 0;
- background-color: black;
-
+    /* margin-right: 0px; */
+    padding:2.0vh 0 2.0vh 0;
+    background-color: black;
 }
-
-
 
 .nav-bar-item{
-    margin-right:2%;
-display: inline;
-
-    
+    cursor: pointer;
+    margin-right:3.5%;
+    display: inline;
 }
-
-
-
-
 
 #hello{
     color:var(--color);
 }
 
-
 .home-intro{
-
     /* border:solid 2px red; */
     position:absolute;
     display: inline-block;
     font-family: Roboto;
+    font-weight: bold;
     font-style: normal;
     right:15vw;
     bottom:40vh;
-  
 }
+
 .web-intro{
     position:absolute;
     display: inline-block;
@@ -82,19 +69,16 @@ display: inline;
     font-style: normal; 
     right:18vw;
     bottom:10vh;
-
 }
-#web{
 
+#web{
     font-family: 'Montserrat', sans-serif;
     text-decoration: underline;
     font-size: calc(3vw + 4vh);
-    /* font-weight: 1; */
+    font-weight: normal;
     right:10vw;
     bottom :0vh;
-
 }
-
 
 .widden{
     color:var(--color);
@@ -102,27 +86,240 @@ display: inline;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Permanent Marker', cursive;
     font-family: 'Neonderthaw', cursive;
-
 }
+
 .who-am-i{
-font-size: calc(3vw + 4vh);
- 
+    font-size: calc(3vw + 4vh);
 }
 
 /* <--------- testing css --------->   */
 #test{
     height: 100vh;
     margin-top: 10px;
-
 }
+
+/* two */
+
 .two{
     border:solid 2px red;
+    position: relative;
 }
+
+.filler-iot{
+    font-size: calc(9vh + 15vw);
+    font-weight: bolder;
+
+    -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.213);
+
+    position: absolute;
+    top: 3vh;
+    left: 3vw;
+
+
+}
+
+/* three */
 
 .three{
     border:solid 2px blue;
+    position: relative;
 }
+
+.boy-girl-talking{
+    border: 1px solid brown;
+    position: absolute;
+    top: 20vh;
+    left: 35vw;
+}
+
+#eqn1{
+    position: absolute;
+    -webkit-user-drag: none;
+    /* object-fit: cover; */
+    top: 42%;
+    left: 35%;
+    height: 4vh;
+    width: auto;
+}
+
+#eqn2{
+    position: absolute;
+    -webkit-user-drag: none;
+    top: 50%;
+    height: 4vh;
+    width: auto;
+}
+
+/* four */
 
 .four{
     border:solid 2px green;
+    position: relative;
+}
+
+.filler-dev{
+    position: relative;
+    font-size: 34vh;
+    font-weight: bolder;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.213);
+    top: 10vh;
+    left: 2vw;
+}
+
+.filler-competitive{
+    position: relative;
+    font-size: 34vh;
+    font-weight: bolder;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.213);
+    top: 14vh;
+    left: 20vw;
+}
+
+/* five */
+
+.five{
+    border: solid 1px #B960FF;
+    position: relative;
+}
+
+/* Contact Form */
+
+.contact-form{
+    position: absolute;
+    top: 26%;
+    left: 10%;
+
+    background-color: #222222;
+    max-height: fit-content;
+    width: 52vw;
+    font-weight: 100;
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* transform: translateY(20vh); */
+    /* border: solid 2px red; */
+    border-radius: 10px;
+    padding: 2vh 2.6vw;
+    font-size: 3.8vh;
+    /* border: blue solid 1px; */
+}
+
+#contact-me-heading{
+    color: #fff;
+    background-color: #222222;
+    /* border: blue solid 1px; */
+}
+
+.form-entries{
+    display: flex;
+    flex-direction: row;
+    color: #2D2D2D;
+}
+
+.form-name, .form-email{
+    margin-right: 4vw;
+    /* border: blue solid 1px; */
+}
+
+.form-email{
+    margin-top: 5vh;
+}
+
+#name, #email{
+    /* border: solid 1px blue; */
+    width: 20vw;
+    height: 6.5vh;
+    border: none;
+    border-radius: 0.3vw;
+    padding: 0vh 0.5vw;
+    font-size: calc(0.8vh + 0.8vw);
+    font-weight: 100;
+    background-color: #fff;
+    color: #222;
+    outline: none;
+}
+
+#name:focus{
+    border: 2px solid #4763ff;
+    box-shadow: inset 0px 0px 40px 40px #4763ff2c;
+}
+
+#email:focus{
+    border: 2px solid #ff7a87;
+    box-shadow: inset 0px 0px 40px 40px #ff7a872c;
+}
+
+#message:focus{
+    border: 2px solid #a1ffa9;
+    box-shadow: inset 0px 0px 100px 100px #a1ffa92c;
+
+}
+
+#message{
+    resize: none;
+    padding: 5px;
+    overflow-y: scroll;
+    /* max-width: 100vw; */
+    /* min-width: 10vw; */
+    height: 40vh;
+    width: 20vw;
+    /* border:  skyblue solid 2px; */
+    /* border: none; */
+    border-radius: 0.3vw;
+    font-size: calc(0.8vh + 0.8vw);
+    font-weight: 100;
+    background-color: #fff;
+    color: #222;
+    outline: none;
+}
+
+.form-send{
+    /* border: yellow solid 1px; */
+    display: flexbox;
+    position: absolute;
+    bottom: 3.5vh;
+    left: 8.4vw;
+}
+
+#form-send-btn{
+    background-color: rgba(128, 30, 205, 0.54);
+    cursor: pointer;
+    color: #fff;
+    border-radius: 0.8vh;
+    border: none;
+    padding: 1.5vh 3.8vw;
+    font-size: 2.5vh;
+    font-weight: 100;
+}
+
+.contact-filler{
+    position: absolute;
+    top: 25%;
+    left: 57%;
+
+    font-size: 40vh;
+    font-weight: bold;
+    /* border: yellow solid 1px; */
+
+    -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.063);
+    
+}
+
+.contact-filler-1{
+    position: absolute;
+    top: 3vh;
+    font-family: 'Kirang Haerang', cursive;
+    color: #ffffff77;
+    font-size: 2.5vh;
+    /* border: solid 1px red; */
 }
