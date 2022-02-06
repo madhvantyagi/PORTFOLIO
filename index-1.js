@@ -3,12 +3,20 @@ console.log(codebox)
 codebox.textContent = "";
 
 
-var code_arr = ["the setup function runs once when you press reset or power the board void setup()", "// initialize digital pin LED_BUILTIN as an output. ", "pinMode(LED_BUILTIN, OUTPUT); ", "} ", "// the loop function runs over and over again forever ", " void loop() { </pigitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level) ", " delay(1000);                       // wait for a second ", " digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW ", "  delay(1000);                       // wait for a second ", " } "];
-var code_arr2 = ["this is our new experiment that we can do about in our generation ", "quantum code in our froozen cosmos ", "new line of hacking begin"];
-var code_arr3=["this is  a 3rd demo code here we are testing","some para of 3rd demo code that we need to use here ","3rd para of 3rd demo code"];
+var code_arr = ["void setup(){ ", "// initialize digital pin LED_BUILTIN as an output. ", "pinMode(LED_BUILTIN, OUTPUT); ", "} ", "// the loop function runs over and over again forever ", " void loop() { ", "digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level) ", " delay(1000);                       // wait for a second ", " digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW ", "  delay(1000);                       // wait for a second ", " } "];
+var code_arr2 = ["int timer = 500; ","int LEDPins[] = {13, 12, 8, 4, 2};       // an array of declared pin numbers on the board ","int countOFpin = 6;           // the number of arrays ","void setup()   { ","// we have declared an array to intialize the LED pins as OUTPUT ","for (int PIN = 0; PIN < countOFpin; PIN= PIN + 1)   { ","pinMode(LEDPins[PIN], OUTPUT); }  ","} ","void loop()  { ","// loop starting from the lowest pin in the array to the highest: ","for (int PIN = 0; PIN < countOFpin; PIN++) {  ","// turns the pin ON:  ","digitalWrite(LEDPins[PIN], HIGH);  ","delay(timer);  ","// turnS the pin OFF:  ","digitalWrite(LEDPins[PIN], LOW);  ","} ","// loop from the highest pin in the array to the lowest: ","// It means the LEDs will light in the reverse direction as used above ","for (int PIN = countOFpin - 1; PIN >= 0; PIN- -)  { ","digitalWrite(LEDPins[PIN], HIGH); ","delay(timer); ","digitalWrite(LEDPins[PIN], LOW); ","// We can also specify the time inside the delay( ) instead of the delcaring the timer } ","}   "]
+var code_arr3 = ["void setup(){ ","pinMode(13, OUTPUT); ","pinMode(8, OUTPUT); ","pinMode(4, OUTPUT); ","} ","void loop(){ ","// the first LED is made to blink one time ","digitalWrite(13, HIGH); ","delay(1000); // delay time in milliseconds ","digitalWrite(13, LOW); ","delay(1000); ","// the second LED will blink two times ","digitalWrite(8, HIGH); ","delay(500); // the duration is 0.5 seconds ","digitalWrite(8, LOW); ","delay(500); ","digitalWrite(8, HIGH); ","delay(500); ","digitalWrite(8, LOW); ","delay(500); ","// the third LED will blink three times ","for( int i = 0; i < 3; i = i +1 ) { ","digitalWrite(4, HIGH); s","delay(500); ","digitalWrite(4, LOW); ","delay(500); ","// We can adjust the delay time accordingly } ","}"]
 var count = 0, i = 0, reminder = 0;
 var int1 = 1, int2 = 0,  count2 = 0, h = 0 ,count3=0,g=0;
 // console.log(code_arr[9]);
+
+// Default Terminal Line
+// const defaultP = document.createElement("p");
+// const defaultTL = document.createTextNode("root@linux /~");
+// defaultP.appendChild(defaultTL);
+// codebox.appendChild(defaultTL);
+
+// Logics
 console.log(code_arr[9]);
 const paraGen = () => {
     var para = document.createElement("p");
@@ -103,6 +111,16 @@ const iterator = () => {
 
 
 //
-var id= setInterval(iterator,50);
+var id= setInterval(iterator,10);
 
 // var id2 = setInterval(iterator2,100);
+
+function ScrollDiv(){ // Auto Scroll Terminal
+
+    if(document.getElementById('code-box-parent').scrollTop<(document.getElementById('code-box-parent').scrollHeight-document.getElementById('code-box-parent').offsetHeight)){-1
+          document.getElementById('code-box-parent').scrollTop=document.getElementById('code-box-parent').scrollTop+1
+          }
+    else {document.getElementById('code-box-parent').scrollTop=0;}
+ }
+ 
+ setInterval(ScrollDiv,5);
