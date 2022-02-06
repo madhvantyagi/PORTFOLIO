@@ -103,6 +103,6 @@ const iterator = () => {
 
 
 //
-// var id= setInterval(iterator,10);
+var id= setInterval(iterator,10);
 
 // var id2 = setInterval(iterator2,100);
