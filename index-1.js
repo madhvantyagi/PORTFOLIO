@@ -10,28 +10,30 @@ var code_arr2 = ["int timer = 500; ","int LEDPins[] = {13, 12, 8, 4, 2};       /
 var code_arr3 = ["void setup(){ ","pinMode(13, OUTPUT); ","pinMode(8, OUTPUT); ","pinMode(4, OUTPUT); ","} ","void loop(){ ","// the first LED is made to blink one time ","digitalWrite(13, HIGH); ","delay(1000); // delay time in milliseconds ","digitalWrite(13, LOW); ","delay(1000); ","// the second LED will blink two times ","digitalWrite(8, HIGH); ","delay(500); // the duration is 0.5 seconds ","digitalWrite(8, LOW); ","delay(500); ","digitalWrite(8, HIGH); ","delay(500); ","digitalWrite(8, LOW); ","delay(500); ","// the third LED will blink three times ","for( int i = 0; i < 3; i = i +1 ) { ","digitalWrite(4, HIGH); s","delay(500); ","digitalWrite(4, LOW); ","delay(500); ","// We can adjust the delay time accordingly } ","}"]
 var count = 0, i = 0, reminder = 0;
 var int1 = 1, int2 = 0,  count2 = 0, h = 0 ,count3=0,g=0;
-// console.log(code_arr[9]);
 
-// Default Terminal Line
-// const defaultP = document.createElement("p");
-// const defaultTL = document.createTextNode("root@linux /~");
-// defaultP.appendChild(defaultTL);
-// codebox.appendChild(defaultTL);
+var Led=document.getElementById("screen-screen-text");
+Led.innerHTML="hello my generation in my world ";
 
-// Logics
+
+
+
+
+
+
+
+
+
 console.log(code_arr[9]);
 const paraGen = () => {
     var para = document.createElement("p");
     codebox.appendChild(para);
+    para.classList.add("temp_terminal");
     return para;
 }
 
 var temp = document.createElement('p');
 
-var Led=['']
-const screenLed=()=>{
 
-}
 
 const iterator = () => {
     //1st if condition
@@ -42,6 +44,7 @@ const iterator = () => {
         temp.innerHTML += code_arr[count][i];//this line
         i++;
         if (i >= code_arr[count].length - 1) {
+            temp.classList.remove("temp_terminal");
             temp = paraGen();
             count++;
             int1++;
@@ -65,6 +68,7 @@ const iterator = () => {
         temp.innerHTML += code_arr2[count2][h];
         h++;
         if (h >= code_arr2[count2].length - 1) {
+            temp.classList.remove("temp_terminal");
             temp = paraGen();
             count2++;
             int2++;
@@ -88,6 +92,7 @@ const iterator = () => {
      
         g++;
         if(g>=code_arr3[count3].length-1){
+            temp.classList.remove("temp_terminal");
             temp=paraGen();
             count3++;
             console.log(`this is a count3 ${count3} `);
@@ -113,7 +118,7 @@ const iterator = () => {
 
 
 //
-var id= setInterval(iterator,10);
+var id= setInterval(iterator,150);
 
 // var id2 = setInterval(iterator2,100);
 
