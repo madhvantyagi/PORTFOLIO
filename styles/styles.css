@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color: #2c2c2c;
+    background-color: #1b1b1b;
 }
 
 
@@ -101,7 +101,7 @@ body{
 /* two */
 
 .two{
-    border:solid 2px red;
+    /* border:solid 2px red; */
     position: relative;
 }
 
@@ -123,12 +123,12 @@ body{
 /* three */
 
 .three{
-    border:solid 2px blue;
+    /* border:solid 2px blue; */
     position: relative;
 }
 
 .boy-girl-talking{
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     position: absolute;
     top: 20vh;
     left: 35vw;
@@ -155,7 +155,7 @@ body{
 /* four */
 
 .four{
-    border:solid 2px green;
+    /* border:solid 2px green; */
     position: relative;
 }
 
@@ -184,7 +184,7 @@ body{
 /* five */
 
 .five{
-    border: solid 1px #B960FF;
+    /* border: solid 1px #B960FF; */
     position: relative;
 }
 
@@ -195,7 +195,7 @@ body{
     top: 28%;
     left: 10%;
 
-    background-color: #222222;
+    background-color: #121212;
     max-height: fit-content;
     width: 52vw;
     font-weight: 100;
@@ -214,7 +214,7 @@ body{
 
 #contact-me-heading{
     color: #fff;
-    background-color: #222222;
+    background-color: #121212;
     /* border: blue solid 1px; */
 }
 

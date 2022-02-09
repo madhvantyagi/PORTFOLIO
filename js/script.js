@@ -14,7 +14,6 @@ var id= setInterval(animate,150);
 
 const cl=()=>{
     clearInterval(id);
-
 }
 
 setTimeout(cl, 1300);
