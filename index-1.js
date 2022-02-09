@@ -1,6 +1,9 @@
+
+
 var codebox = document.querySelector(".code-box");
 console.log(codebox)
 codebox.textContent = "";
+
 
 
 var code_arr = ["the setup function runs once when you press reset or power the board void setup()", "// initialize digital pin LED_BUILTIN as an output. ", "pinMode(LED_BUILTIN, OUTPUT); ", "} ", "// the loop function runs over and over again forever ", " void loop() { </pigitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level) ", " delay(1000);                       // wait for a second ", " digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW ", "  delay(1000);                       // wait for a second ", " } "];
@@ -8,7 +11,6 @@ var code_arr2 = ["ahis is our new experiment that we can do about in our generat
 var code_arr3=["this is  a 3rd demo code here we are testing","some para of 3rd demo code that we need to use here ","3rd para of 3rd demo code"];
 var count = 0, i = 0, reminder = 0;
 var int1 = 1, int2 = 0,  count2 = 0, h = 0 ,count3=0,g=0;
-// console.log(code_arr[9]);
 console.log(code_arr[9]);
 const paraGen = () => {
     var para = document.createElement("p");
@@ -103,6 +105,11 @@ const iterator = () => {
 
 
 //
-// var id= setInterval(iterator,10);
+var id= setInterval(iterator,10);
 
 // var id2 = setInterval(iterator2,100);
+
+
+
+var screenText=document.getElementById("screen-screen-text");
+screenText.textContent="";
