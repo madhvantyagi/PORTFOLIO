@@ -85,10 +85,10 @@ body{
     border-radius: 7px;
     position: relative;
 
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif;
     font-family: 'Orbitron', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Source Code Pro', monospace; */
 
     background-color: #00432c;
     color: #000000d5;
@@ -101,6 +101,12 @@ body{
     position: absolute;
     padding: 3.1vh 1vh;
     font-size: calc(2vh + 1vw);
+    
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Orbitron', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Source Code Pro', monospace;
+
 }
 
 .right-pins-all{

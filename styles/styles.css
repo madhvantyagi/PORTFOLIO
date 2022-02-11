@@ -8,11 +8,12 @@
     color: #ffffff;
     font-family: 'Roboto', 'Open Sans', 'Source Code Pro', sans-serif;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body{
     background-color: #1b1b1b;
+    overflow-x: hidden;
 }
 
 
@@ -25,6 +26,7 @@ body{
     background-size:contain;
     align-items: center;
     align-content: center;
+    border:solid 2px yellow;
 }
 
 .nav-bar{
@@ -104,7 +106,7 @@ body{
 /* two */
 
 .two{
-    /* border:solid 2px red; */
+    border:solid 2px red;
     position: relative;
 }
 
@@ -115,7 +117,6 @@ body{
     -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(255, 255, 255, 0.213);
-
     position: absolute;
     top: 3vh;
     left: 3vw;
@@ -126,15 +127,22 @@ body{
 /* three */
 
 .three{
-    /* border:solid 2px blue; */
+    border:solid 2px blue;
     position: relative;
 }
 
-.boy-girl-talking{
-    /* border: 1px solid brown; */
+.boy-talking{
+    border: 1px solid brown;
     position: absolute;
     top: 20vh;
     left: 35vw;
+}
+.girl-talking{
+    position: absolute;
+    top: 20vh;
+    right: 32vw;
+    border: 1px solid brown;
+
 }
 
 #eqn1{
@@ -158,8 +166,9 @@ body{
 /* four */
 
 .four{
-    /* border:solid 2px green; */
+    border:solid 2px green;
     position: relative;
+
 }
 
 .filler-dev{
@@ -274,7 +283,7 @@ body{
     /* min-width: 10vw; */
     height: 40vh;
     width: 20vw;
-    /* border:  skyblue solid 2px; */
+    border:  skyblue solid 2px;
     /* border: none; */
     border-radius: 0.3vw;
     font-size: calc(0.8vh + 0.8vw);
@@ -285,7 +294,7 @@ body{
 }
 
 .form-send{
-    /* border: yellow solid 1px; */
+    border: yellow solid 1px;
     display: flexbox;
     position: absolute;
     bottom: 3.5vh;
@@ -332,11 +341,14 @@ body{
 
 
 .outer{
+ margin:calc(10vh + 5vw) 0vh 0vh 1.5vw;
     width: 40vw;
     height: 50vh;
 
-    background-color: #13191d;
-    transform: translateY(20vh);
+    background-color: #171d22;
+    z-index: 111;
+    /* transform: translateY(20vh); */
+   
     border-radius: 0.5vw;
     box-shadow: 3px 3px 3px 3px #0000005f;
 }
@@ -373,7 +385,7 @@ body{
 
 .code-box{
     /* border:solid 2px rgb(186, 186, 186); */
-    color:rgba(255, 255, 255, 0.815);
+    color:rgba(255, 255, 255, 0.801);
     font-family: 'Abel', sans-serif;
     font-size: calc(0.6vw + 0.9vh);
     padding: 1.3vh 0vh 0vh 1.3vh;
@@ -385,6 +397,9 @@ body{
     overflow-x: hidden;
     overflow-y: auto;
     text-align:justify;
+}
+#code-box-parent::-webkit-scrollbar{
+display: none;
 }
 
 .default-text{
@@ -425,12 +440,51 @@ body{
         opacity: 1;
     }
 }
+
+/* buttons */
+#term-btn{
+    display: flex;
+    flex-direction:column;
+    /* border:solid 2px rgb(0, 238, 255); */
+}
+
+.mainbtn{
+    /* border:solid 2px purple; */
+    display: flex;
+ justify-content: center;
+}
+.ard-btn{
+    margin: 2vh 10px 0  0;
+    background-color: black;
+    border-radius: 2px;
+}
+
+/* arduino  */
+.arduino{
+    /* border:solid 2px rgb(0, 224, 11); */
+     margin:5vw 0vw 0vw 25vw;
+     width: calc(10vw + 10vh);
+     height: 100%;
+
+}
+
+.arduino img{
+    width: 100%;
+    height: auto;
+   
+}
+
+.flex_terminal{
+    display: flex;
+}
+
 /* terminal-screen */
 
 .screen{
     display: flex;
-    transform:translate(50vw,5vw);
-    /* border: pink solid 1px; */
+    width: 40vw;
+    transform:translate(50vw,-4vh);
+    border: pink solid 1px;
     flex-direction: column;
 }
 
@@ -505,7 +559,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Source Code Pro', monospace;
    overflow-y: hidden;
-    background-color: #00432c;
+    background-color: #10382a;
     color: #000000d5;
     width: 100%;
     height: 11vh;
@@ -516,7 +570,8 @@ body{
 #screen-screen-text{
     position: absolute;
     padding: 3.1vh 1vh;
-    font-size: calc(2vh + 1vw);
+    font-size: calc(1vh + 1vw);
+    font-family: 'Source Code Pro', monospace;
 }
 
 

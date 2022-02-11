@@ -25,6 +25,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Mulish:wght@700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Code+Pro:wght@200&display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orbitron:wght@500&family=Roboto:wght@100&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
 
 </head>
 
@@ -79,27 +80,43 @@
             IOT
         </div>
         <!-- content -->
-        <div class="outer">
-            <div class="top">
-                <div id="circle-1" class="circle"></div>
-                <div id="circle-2" class="circle"></div>
-                <div id="circle-3" class="circle"></div>
-                <p class="terminal-title">run arduino</p>
-            </div>
-            <div id="code-box-parent">
-                <p class="default-text">
-                    root@linux /~
-                </p>
-                <div class="code-box" id="id-code-box">
+        <div class="flex_terminal">
+            <div id="term-btn">
+                <div class="outer">
+                    <div class="top">
+                        <div id="circle-1" class="circle"></div>
+                        <div id="circle-2" class="circle"></div>
+                        <div id="circle-3" class="circle"></div>
+                        <p class="terminal-title">run arduino</p>
+                    </div>
+                    <div id="code-box-parent">
+                        <p class="default-text">
+                            root@linux /~
+                        </p>
+                        <div class="code-box" id="id-code-box">
 
-                    this in our generation in our world that in our journey for that class in our worldur generation in
-                    our world that in our journey for that class in our worldur generation
-                    in our world that in our journey for
-                    that class in our world ur generation in our world that in our journey for that class in our world
-                    ur generation in our world that in our journey for that class in our world
+                            this in our generation in our world that in our journey for that class in our worldur
+                            generation in
+                            our world that in our journey for that class in our worldur generation
+                            in our world that in our journey for
+                            that class in our world ur generation in our world that in our journey for that class in our
+                            world
+                            ur generation in our world that in our journey for that class in our world
+                        </div>
+                    </div>
+                </div>
+                <div class="mainbtn">
+                    <button type="submit" class="ard-btn" id="run">RUN</button>
+                    <button type="submit" class="ard-btn" id="remove" onclick="removeAnimator()">REMOVE</button>
                 </div>
             </div>
+       
+        <!-- <---------arduinio-->
+
+        <div class="arduino">
+            <img src="/assets/Arduino.svg">
         </div>
+      </div>
         <!-- screen -->
 
 
@@ -143,9 +160,11 @@
         <img id="eqn1" src="./assets/Filler-EQN-1.svg" alt="Mathematical Eqn">
         <img id="eqn2" src="./assets/Filelr-EQN-2.svg" alt="Mathematical Eqn">
 
-        <div class="boy-girl-talking">
+        <div class="boy-talking">
             <img id="three-boy" src="./assets/BOY.svg" alt="a boy">
-            <img id="three-girl" src="./assets/GIRL.svg" alt="a girl">
+        </div>
+        <div class="girl-talking">
+            <img id="three-boy" src="./assets/GIRL.svg" alt="a boy">
         </div>
 
 
@@ -180,9 +199,9 @@
 
 
 
-
-
-
+ 
+ 
+ 
 
 
 
@@ -232,6 +251,8 @@
     </div>
 
     <!-- <script src="./js/script.js" async defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>	
     <script src="/index-1.js" async defer></script>
 </body>
 

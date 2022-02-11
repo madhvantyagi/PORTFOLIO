@@ -1,16 +1,16 @@
 var web=document.getElementById("web");
-var count=0;
+var love=0;
 
-const animate=()=>{
+const webDev=()=>{
 var names=["web devloper", "web dev#</er", "web dev#</!@","web dev#</!@","web dev!0p^r","web devlo...","web devl[0]9er","web devloper"];
 
-web.innerText=names[count];
-count++;
-if(count>=names.length){
-    count=0;
+web.innerText=names[love];
+love++;
+if(love>=names.length){
+    love=0;
 }
 }
-var id= setInterval(animate,150);
+var id= setInterval(webDev,150);
 
 const cl=()=>{
     clearInterval(id);
