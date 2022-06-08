@@ -206,6 +206,20 @@ function ScrollDiv(){ // Auto Scroll Terminal
  
  setInterval(ScrollDiv,5);
 
+ 
+var target= document.getElementById("")
+
+const mouseScroller=()=>{
+    var width=window.innerWidth;
+    var height =window.innerHeight;
+    
+}
+
+ const effect =()=>{
+
+
+
+ }
 
 
 

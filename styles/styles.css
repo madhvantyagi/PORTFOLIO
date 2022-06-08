@@ -101,6 +101,8 @@ body{
 #test{
     height: 100vh;
     margin-top: 10px;
+    /* overflow-y: scroll; */
+
 }
 
 /* two */
@@ -129,6 +131,10 @@ body{
 .three{
     border:solid 2px blue;
     position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+   
+   
 }
 
 .boy-talking{
