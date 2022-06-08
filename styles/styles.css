@@ -171,6 +171,63 @@ body{
 
 /* four */
 
+.leetcode {
+    z-index: 1;
+    position: absolute;
+    top: 24vh;
+    left: 20vw;
+    height: 52vh;
+    width: 25vw;
+    background-color: #222222f1;
+    border-radius: 4px;
+}
+
+.leetcode-logo{
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.leetcode-heading{
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.leetcode-stats{
+    /* border: 1px solid red; */
+    /* background-color: white; */
+    margin-top: 4vh;
+    margin-left: 2vw;
+    width: 21vw;
+    height: 18vh;
+}
+
+.leetcode-btn{
+    display: flexbox;
+    position: absolute;
+    bottom: 3.5vh;
+    left: 7vw;
+}
+
+.leetcode-btn a{
+    text-decoration: none;
+    background-color: #7239FF;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3vh;
+    border: none;
+    padding: 1.5vh 3.8vw;
+    font-size: 2.5vh;
+    font-weight: 100;
+}
+
+#leetcode-logo-img{
+    display: block;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
 .four{
     border:solid 2px green;
     position: relative;
