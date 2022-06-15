@@ -10,13 +10,14 @@ gsap.from(".girl-talking",{
              
          },
          x:400,
-        duration:1
+        duration:1,
+        // backgroundColor:"red"
 });
 
 gsap.from(".boy-talking",{
     scrollTrigger:{
         trigger:".boy-talking",
-        markers:true,
+        // markers:true,
         start:"center-=180px center+=50px",
         end:"bottom center+=30px",
         scrub:0.5,
@@ -26,6 +27,22 @@ gsap.from(".boy-talking",{
     x:-400,
    duration:1
 });
+
+let Iot=document.querySelector("#code-box-parent");
+let filler=gsap.to(".filler-iot",{  
+    x:200,
+   opacity:0,
+   ease:"ease",
+  duration:1.5
+});
+
+Iot.addEventListener("mouseenter",()=>{
+    filler.play();
+})
+
+Iot.addEventListener("mouseleave",()=>{
+filler.reverse();
+})
 
 var codebox = document.querySelector(".code-box");
 console.log(codebox)
@@ -206,7 +223,45 @@ function ScrollDiv(){ // Auto Scroll Terminal
  
  setInterval(ScrollDiv,5);
 
+ 
+var target= document.getElementById("")
+
+const mouseScroller=()=>{
+    var width=window.innerWidth;
+    var height =window.innerHeight;
+    
+}
+
+ const effect =()=>{
+
+
+
+ }
 
 
 
 //  gsap.to(screenColor, {duration: 3,backgroundColor:"red"});
+
+//CODE FOR MAKING MOUSE ANIMATION
+
+let word=document.querySelectorAll(".who-am-i");
+let cursor=document.querySelector(".cursor");
+
+word="yeah";
+let x,y;
+
+
+
+
+
+
+
+document.body.addEventListener("mousemove",cordinates);
+function cordinates(e){
+x=e.clientX;
+y=e.clientY;
+console.log(cursor);
+cursor.style.left=x-5+"px";
+cursor.style.top=y-5+"px";
+console.log(x,y);
+}
