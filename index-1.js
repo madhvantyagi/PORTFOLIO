@@ -1,18 +1,18 @@
 gsap.registerPlugin("ScrollTrigger");
-gsap.from(".girl-talking",{
-         scrollTrigger:{
-             trigger:".girl-talking",
-             markers:true,
-             start:"center-=180px center+=50px",
-             end:"bottom center+=30px",
-             scrub:0.5,
+// gsap.from(".girl-talking",{
+//          scrollTrigger:{
+//              trigger:".girl-talking",
+//              markers:true,
+//              start:"center-=180px center+=50px",
+//              end:"bottom center+=30px",
+//              scrub:0.5,
 
              
-         },
-         x:400,
-        duration:1,
-        // backgroundColor:"red"
-});
+//          },
+//          x:400,
+//         duration:1,
+//         // backgroundColor:"red"
+// });
 
 gsap.from(".boy-talking",{
     scrollTrigger:{
@@ -253,9 +253,6 @@ let x,y;
 
 
 
-
-
-
 document.body.addEventListener("mousemove",cordinates);
 function cordinates(e){
 x=e.clientX;
@@ -265,3 +262,13 @@ cursor.style.left=x-5+"px";
 cursor.style.top=y-5+"px";
 console.log(x,y);
 }
+
+let mainTime=gsap.timeline({
+paused:true
+}).from(".boy-talking",{
+    x:-400,
+   duration:1
+}).from("girl-talking",{
+    x:-400,
+    duration:1
+})

@@ -14,6 +14,7 @@
 body{
     background-color: #1b1b1b;
     overflow-x: hidden;
+    cursor: none;
 }
 
 
@@ -704,6 +705,7 @@ display: none;
     border-radius:50%;
     z-index: 11111;
     animation : cursoranime 2s infinite ease;
+    pointer-events: none;
 }
 @keyframes cursoranime{
     0%, 100% {
