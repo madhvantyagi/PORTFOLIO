@@ -1,32 +1,4 @@
 gsap.registerPlugin("ScrollTrigger");
-// gsap.from(".girl-talking",{
-//          scrollTrigger:{
-//              trigger:".girl-talking",
-//              markers:true,
-//              start:"center-=180px center+=50px",
-//              end:"bottom center+=30px",
-//              scrub:0.5,
-
-             
-//          },
-//          x:400,
-//         duration:1,
-//         // backgroundColor:"red"
-// });
-
-gsap.from(".boy-talking",{
-    scrollTrigger:{
-        trigger:".boy-talking",
-        // markers:true,
-        start:"center-=180px center+=50px",
-        end:"bottom center+=30px",
-        scrub:0.5,
-
-        
-    },
-    x:-400,
-   duration:1
-});
 
 let Iot=document.querySelector("#code-box-parent");
 let filler=gsap.to(".filler-iot",{  
@@ -257,18 +229,64 @@ document.body.addEventListener("mousemove",cordinates);
 function cordinates(e){
 x=e.clientX;
 y=e.clientY;
-console.log(cursor);
+// console.log(cursor);
 cursor.style.left=x-5+"px";
 cursor.style.top=y-5+"px";
-console.log(x,y);
+// console.log(x,y);
 }
 
+let Div=document.createElement("div");
+// Div.appendChild(document.createTextNode('yeah i am working in the world'));
+// let mainDiv=document.querySelector(".three");
+// console.log(mainDiv);
+// mainDiv.appendChild(Div);
 let mainTime=gsap.timeline({
 paused:true
-}).from(".boy-talking",{
-    x:-400,
-   duration:1
-}).from("girl-talking",{
-    x:-400,
-    duration:1
+}).to(".girl-talking",{
+    x:400,
+    duration:15,
+  
+}).to(".boy-talking ,.girl-talking",{
+  
+    duration:20,
+     css:{
+         scale:0.7,
+        x:400
+     },
+    
+}).from(".para-us",{
+   opacity:0,
+   y:250,
+   duration:30
+});
+
+ScrollTrigger.create({
+    animation:mainTime,
+    trigger:".three",
+    start:"top 0",
+    end:"=+1000",
+    scrub:true,
+    pin:true,
+    // markers:true,
+    onEnter:function(){
+        console.log(" i am a scroll trigger hello world");
+    }
+    // id:"test"
+});
+  
+let tar=document.querySelector(".outside-div");
+ScrollTrigger.create({
+    trigger:".two",
+    markers:true,
+    onEnter:function(){
+      tar.classList.add("trans-div");
+      console.log(tar);
+    },
+    start:"top 0",
+    end:"500px",
+    onLeave:function(){
+        tar.classList.remove("trans-div");
+        console.log("I am oncomplete");
+    }
+
 })
