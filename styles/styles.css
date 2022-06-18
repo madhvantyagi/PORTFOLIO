@@ -11,6 +11,10 @@
     /* overflow-x: hidden; */
 }
 
+img{
+    -webkit-user-drag: none;
+}
+
 body{
     background-color: #1b1b1b;
     overflow-x: hidden;
@@ -195,10 +199,10 @@ body{
     left: 13vw;
     height: 50vh;
     width: 25vw;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(0, 0, 0, 0.02);
+    background: rgb(48,48,48);
+    background: linear-gradient(315deg, rgba(48,48,48,1) 4%, rgba(189,189,189,1) 46%, rgba(48,48,48,1) 96%);
     border-radius: 9px;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 10px rgba(0, 0, 0.8, 10);
     backdrop-filter: blur(5px);
 }
 
@@ -230,7 +234,7 @@ body{
 
 .leetcode-btn a{
     text-decoration: none;
-    background-color: #7239FF;
+    background-color: #191919;
     cursor: pointer;
     color: #fff;
     border-radius: 3vh;
@@ -287,7 +291,7 @@ body{
 
 .contact-form{
     position: absolute;
-    top: 28%;
+    top: 30%;
     left: 10%;
 
     background-color: #121212;
@@ -320,6 +324,7 @@ body{
 }
 
 .form-name, .form-email{
+    box-sizing: border-box;
     margin-right: 4vw;
     /* border: blue solid 1px; */
 }
@@ -329,6 +334,7 @@ body{
 }
 
 #name, #email{
+    box-sizing: border-box;
     /* border: solid 1px blue; */
     width: 20vw;
     height: 6.5vh;
@@ -343,18 +349,21 @@ body{
 }
 
 #name:focus{
+    box-sizing: border-box;
     border: 2px solid #4763ff;
-    box-shadow: inset 0px 0px 40px 40px #4763ff2c;
+    /* box-shadow: inset 0px 0px 40px 40px #4763ff2c; */
 }
 
 #email:focus{
+    box-sizing: border-box;
     border: 2px solid #ff7a87;
-    box-shadow: inset 0px 0px 40px 40px #ff7a872c;
+    /* box-shadow: inset 0px 0px 40px 40px #ff7a872c; */
 }
 
 #message:focus{
+    box-sizing: border-box;
     border: 2px solid #a1ffa9;
-    box-shadow: inset 0px 0px 100px 100px #a1ffa92c;
+    /* box-shadow: inset 0px 0px 100px 100px #a1ffa92c; */
 
 }
 
@@ -417,6 +426,30 @@ body{
     color: #ffffff77;
     font-size: 2.5vh;
     /* border: solid 1px red; */
+}
+
+/* contact form - connect section */
+
+.contact-connect{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 2vw;
+    bottom: 25vh;
+}
+
+.contact-connect-logo{
+    margin-bottom: 3vh;
+}
+
+.contact-connect-links{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-connect-name{
+    margin-bottom: 5.2vh;
+    margin-right: 4vw;
 }
 
 /* terminal part */
