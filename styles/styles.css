@@ -743,8 +743,8 @@ display: none;
      padding:0px;
     font-weight: 600;
      /* border:solid 2px red; */
-     background-image: linear-gradient(180deg, #ffffff 0%, #000000 140%);
-     transition: 0.8s ease;
+     background: #ffffff;
+     /* transition: 0.8s ease; */
    
   }
   .trans-div::before{
@@ -764,8 +764,8 @@ display: none;
    padding:0px;
   font-weight: 600;
    /* border:solid 2px red; */
-   background-image: linear-gradient(180deg, #ffffff 0%, #000000 140%);
-   transition: 0.8s ease;
+   background: #ffffff;
+   /* transition: 0.8s ease; */
  
 }
 .trans-div1::before{
@@ -784,8 +784,7 @@ display: none;
    padding:0px;
   font-weight: 600;
    /* border:solid 2px red; */
-   background-image: linear-gradient(180deg, #ffffff 0%, #000000 140%);
-   transition: 0.8s ease;
+   background: #ffffff;
  
 }
 .trans-div2::before{
