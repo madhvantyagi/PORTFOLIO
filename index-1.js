@@ -269,24 +269,51 @@ ScrollTrigger.create({
     pin:true,
     // markers:true,
     onEnter:function(){
-        console.log(" i am a scroll trigger hello world");
+        tar.classList.add("trans-div1");
+    },
+    onLeave:function(){
+        tar.classList.remove("trans-div1");
     }
-    // id:"test"
+    
 });
   
 let tar=document.querySelector(".outside-div");
 ScrollTrigger.create({
     trigger:".two",
-    markers:true,
+    // markers:true,
     onEnter:function(){
       tar.classList.add("trans-div");
       console.log(tar);
     },
     start:"top 0",
-    end:"500px",
+    end:"700px",
     onLeave:function(){
         tar.classList.remove("trans-div");
         console.log("I am oncomplete");
     }
 
+});
+
+ScrollTrigger.create({
+    trigger:".four",
+    // markers:true,
+    onEnter:function(){
+      tar.classList.add("trans-div2");
+    },
+    start:"top 0",
+    end:"550px",
+    markers:true,
+    onLeave:function(){
+        tar.classList.remove("trans-div2");
+    }
+
+});
+
+var madhavan=document.querySelector("#madhavan");
+ console.log(madhavan);
+madhavan.addEventListener("mousemove",()=>{
+    cursor.classList.add("big");
+})
+madhavan.addEventListener("mouseleave",()=>{
+    cursor.classList.remove("big");
 })
