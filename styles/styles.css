@@ -199,12 +199,18 @@ body{
     left: 13vw;
     height: 50vh;
     width: 25vw;
-    background: rgb(48,48,48);
-    background: linear-gradient(315deg, rgba(48,48,48,1) 4%, rgba(189,189,189,1) 46%, rgba(48,48,48,1) 96%);
+    
+      /* background-image: url("/leet.jpg") ;
+       */
+    background:rgba(203, 155, 32, 0.907);
+     background-size: cover;
     border-radius: 9px;
     box-shadow: 0 8px 10px rgba(0, 0, 0.8, 10);
-    backdrop-filter: blur(5px);
+
+ 
 }
+
+
 
 .leetcode-logo{
     position: relative;
@@ -433,35 +439,70 @@ body{
 .contact-connect{
     display: flex;
     flex-direction: column;
+/* border:solid 2px red; */
     position: absolute;
-    right: 2vw;
+    right: 0vw;
     bottom: 25vh;
+    width:20vw;
 }
+
+.contact-connect {
+    display: flex;
+    flex-direction: column;
+}
+.contact-connect div{
+    display: flex;
+    /* border: solid 2px yellow; */
+    /* padding-right:4vw; */
+    margin-right: 2vw;
+    margin-bottom:2vh;
+    
+}
+
+
 
 .contact-connect-logo{
-    margin-bottom: 3vh;
+   
+    width: 20%;
+    height: 20%;
+    margin-left: auto;
+  
 }
 
-.contact-connect-links{
-    display: flex;
-    flex-direction: row;
+.contact-connect-logo:hover{
+    animation:rotate 0.8s ease ;
 }
 
 .contact-connect-name{
-    margin-bottom: 5.2vh;
-    margin-right: 4vw;
+    margin-top:2vh;
+    margin-left: auto;
+    padding-right: -100px;
+    display: none;
+}
+.fake{
+ display:unset;
+}
+@keyframes rotate {
+    0%{
+       transform: rotateX(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
+
+
+
+
 /* terminal part */
-
-
-
 .outer{
  margin:calc(10vh + 5vw) 0vh 0vh 1.5vw;
     width: 40vw;
     height: 50vh;
 
-    background-color: #171d22;
+    background-color: #000000e4;
     z-index: 111;
     /* transform: translateY(20vh); */
    
@@ -473,7 +514,7 @@ body{
     /* border: green 1px solid; */
     border-radius: 0.5vw 0.5vw 0 0;
     display: flex;
-    background-color: #1c2327;
+    background-color: #ba60fff0;
     width:40vw;
     height: 3vh;
     padding: 0.5vh 0vw 4.2vh 1.2vw;
@@ -488,7 +529,7 @@ body{
 }
 
 #circle-1{
-    background-color: rgb(143, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
 #circle-2{
@@ -496,7 +537,7 @@ body{
 }
 
 #circle-3{
-    background-color: rgb(0, 97, 0);
+    background-color: rgb(26, 108, 112);
 }
 
 .code-box{
@@ -612,7 +653,7 @@ display: none;
     /* border: purple solid 1px; */
     padding: 3vh 1vw;
     border-radius: 8px;
-    background-color: rgb(0, 34, 23);
+    background-color: rgb(21, 22, 21);
     width: 40vw;
     height: 25vh;
 }
@@ -656,7 +697,7 @@ display: none;
 }
 
 .screen-casing{
-    background-color: #181818;
+    background-color: #070707e2;
     border-radius: 3px;
     width: 38vw;
     height: 19vh;
@@ -776,14 +817,15 @@ display: none;
      padding:0px;
     font-weight: 600;
      /* border:solid 2px red; */
-     background: #ffffff;
+     background: #000000;
+
      /* transition: 0.8s ease; */
    
   }
   .trans-div::before{
       content: "HOME";
       font-size: 4vh;
-      color:rgb(0, 0, 0); 
+      color:rgb(173,255,47); 
      
   }
   .trans-div ul{
@@ -797,14 +839,14 @@ display: none;
    padding:0px;
   font-weight: 600;
    /* border:solid 2px red; */
-   background: #ffffff;
+   background: #000000;
    /* transition: 0.8s ease; */
  
 }
 .trans-div1::before{
     content: "ABOUT";
     font-size: 4vh;
-    color:rgb(0, 0, 0); 
+    color:rgb(173,255,47); 
    
 }
 .trans-div1 ul{
@@ -817,13 +859,14 @@ display: none;
    padding:0px;
   font-weight: 600;
    /* border:solid 2px red; */
-   background: #ffffff;
+      background: #000000;
+;
  
 }
 .trans-div2::before{
     content: "RESUME";
     font-size: 4vh;
-    color:rgb(0, 0, 0); 
+    color:rgb(173,255,47); 
    
 }
 .trans-div2 ul{
