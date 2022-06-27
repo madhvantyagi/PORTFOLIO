@@ -273,6 +273,12 @@ ScrollTrigger.create({
     },
     onLeave:function(){
         tar.classList.remove("trans-div1");
+    },
+    onEnterBack:()=>{
+        tar.classList.add("trans-div1");
+    },
+    onLeaveBack:()=>{
+        tar.classList.remove("trans-div1");
     }
     
 });
@@ -290,6 +296,12 @@ ScrollTrigger.create({
     onLeave:function(){
         tar.classList.remove("trans-div");
         console.log("I am oncomplete");
+    },
+    onEnterBack:()=>{
+        tar.classList.add("trans-div");
+    },
+    onLeaveBack:()=>{
+        tar.classList.remove("trans-div");   
     }
 
 });
@@ -300,13 +312,18 @@ ScrollTrigger.create({
     onEnter:function(){
       tar.classList.add("trans-div2");
     },
-    start:"top 0",
+    start:"-650 0",
     end:"550px",
     markers:true,
     onLeave:function(){
         tar.classList.remove("trans-div2");
+    },
+    onEnterBack:()=>{
+        tar.classList.add("trans-div2");
+    },
+    onLeaveBack:()=>{
+        tar.classList.remove("trans-div2");
     }
-
 });
 
 var madhavan=document.querySelector("#madhavan");
