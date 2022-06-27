@@ -21,9 +21,9 @@ console.log(codebox)
 codebox.textContent = "";
 
 
-var code_arr = ["void setup(){ ", "// initialize digital pin LED_BUILTIN as an output. ", "pinMode(LED_BUILTIN, OUTPUT); ", "} ", "// the loop function runs over and over again forever ", " void loop() { ", "digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level) ", " delay(1000);                       // wait for a second ", " digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW ", "  delay(1000);                       // wait for a second ", " } "];
-var code_arr2 = ["int timer = 500; ","int LEDPins[] = {13, 12, 8, 4, 2};       // an array of declared pin numbers on the board ","int countOFpin = 6;           // the number of arrays ","void setup()   { ","// we have declared an array to intialize the LED pins as OUTPUT ","for (int PIN = 0; PIN < countOFpin; PIN= PIN + 1)   { ","pinMode(LEDPins[PIN], OUTPUT); }  ","} ","void loop()  { ","// loop starting from the lowest pin in the array to the highest: ","for (int PIN = 0; PIN < countOFpin; PIN++) {  ","// turns the pin ON:  ","digitalWrite(LEDPins[PIN], HIGH);  ","delay(timer);  ","// turnS the pin OFF:  ","digitalWrite(LEDPins[PIN], LOW);  ","} ","// loop from the highest pin in the array to the lowest: ","// It means the LEDs will light in the reverse direction as used above ","for (int PIN = countOFpin - 1; PIN >= 0; PIN- -)  { ","digitalWrite(LEDPins[PIN], HIGH); ","delay(timer); ","digitalWrite(LEDPins[PIN], LOW); ","// We can also specify the time inside the delay( ) instead of the delcaring the timer } ","}   "]
-var code_arr3 = ["void setup(){ ","pinMode(13, OUTPUT); ","pinMode(8, OUTPUT); ","pinMode(4, OUTPUT); ","} ","void loop(){ ","// the first LED is made to blink one time ","digitalWrite(13, HIGH); ","delay(1000); // delay time in milliseconds ","digitalWrite(13, LOW); ","delay(1000); ","// the second LED will blink two times ","digitalWrite(8, HIGH); ","delay(500); // the duration is 0.5 seconds ","digitalWrite(8, LOW); ","delay(500); ","digitalWrite(8, HIGH); ","delay(500); ","digitalWrite(8, LOW); ","delay(500); ","// the third LED will blink three times ","for( int i = 0; i < 3; i = i +1 ) { ","digitalWrite(4, HIGH); s","delay(500); ","digitalWrite(4, LOW); ","delay(500); ","// We can adjust the delay time accordingly } ","}"]
+var code_arr = ["I am Madhvan Tyagi Software programmer ", "I have excellence in so many devlopement techniques", " ", "Right now I am working over the Time machine ,", " I need 100 trillion dollar funding to continue my project ", "some of my Algorithms are here  ", " They are in binary", "  0101010110110111010010001111010110100100101001010110101110 ", " } "];
+var code_arr2 = ["int timer = 500; ","int LEDPins[] = {13, 12, 8, 4, 2};       // an array of declared pin numbers on the board ","int countOFpin = 6;           // the number of arrays ","void setup()   { ","// we have declared an array to intialize the LED pins as OUTPUT ","for (int PIN = 0; PIN < countOFpin; PIN= PIN + 1)   { ","pinMode(LEDPins[PIN], OUTPUT); }  ","}"]
+var code_arr3 = ["void setup(){ ","pinMode(13, OUTPUT); ","pinMode(8, OUTPUT); ","pinMode(4, OUTPUT); ","} ","void loop(){ ","// the first LED is made to blink one time ","digitalWrite(13, HIGH); ","delay(1000); // delay time in milliseconds ","digitalWrite(13, LOW); ","delay(1000); ","// the second LED will blink two times ","digitalWrite(8, HIGH); ","delay(500); // the duration is 0.5 seconds ","digitalWrite(8, LOW); ","delay(500); ","digitalWrite(8, HIGH); ","delay(500); ","digitalWrite(8, LOW); ",""]
 var count = 0, i = 0, reminder = 0;
 var int1 = 1, int2 = 0,  count2 = 0, h = 0 ,count3=0,g=0 , notifier=1;
 
@@ -37,20 +37,20 @@ const screenAnimator=()=>{
     if(notifier==1){
     gsap.to(screenColor,{duration:"1.5",backgroundColor:"#0fb87d"});
          gsap.to(screenText,{duration:"1.2",color:"black"});
-    screenText.textContent="Temp: 25°C, Humidity:49%";
+    screenText.textContent="I was the charles babbage ";
     notifier++;
     console.log("i am screen animator");
 }
     else if(notifier==2){
         gsap.to(screenColor,{duration:"1.5",backgroundColor:"#0fb87d"});
-        screenText.textContent="lets have a party";
+        screenText.textContent="Excellence in Python, java , c++";
        notifier++;
 }
   
     
     else if(notifier==3){
         gsap.to(screenColor,{duration:"1.5",backgroundColor:"#0fb87d"});
-        screenText.textContent="lets have an another  party";
+        screenText.textContent="Know  Ml techniques and algorithms";
         notifier=1;
     }
 }
@@ -188,12 +188,12 @@ var id= setInterval(iterator,150);
 function ScrollDiv(){ // Auto Scroll Terminal
 
     if(document.getElementById('code-box-parent').scrollTop<(document.getElementById('code-box-parent').scrollHeight-document.getElementById('code-box-parent').offsetHeight)){-1
-          document.getElementById('code-box-parent').scrollTop=document.getElementById('code-box-parent').scrollTop+1
+          document.getElementById('code-box-parent').scrollTop+=1;
           }
     else {document.getElementById('code-box-parent').scrollTop=0;}
  }
  
- setInterval(ScrollDiv,5);
+ setInterval(ScrollDiv,2);
 
  
 var target= document.getElementById("")
@@ -316,4 +316,48 @@ madhavan.addEventListener("mousemove",()=>{
 })
 madhavan.addEventListener("mouseleave",()=>{
     cursor.classList.remove("big");
+})
+
+
+let logo= document.querySelectorAll(".contact-connect-logo");
+let t= document.querySelectorAll(".contact-connect-name");
+console.log(logo[0],logo)
+logo[0].addEventListener("mouseenter",()=>{
+    t[0].classList.add("fake");
+    gsap.from(t[0],{x:"40",opacity:0,duration:0.9,ease:"ease"});
+}
+);
+
+logo[0].addEventListener("mouseleave",()=>{
+    t[0].classList.remove("fake");
+})
+
+logo[1].addEventListener("mouseenter",()=>{
+    t[1].classList.add("fake");
+    gsap.from(t[1],{x:"40",opacity:0,duration:0.9,ease:"ease"});
+}
+);
+
+logo[1].addEventListener("mouseleave",()=>{
+    t[1].classList.remove("fake");
+})
+
+logo[2].addEventListener("mouseenter",()=>{
+    t[2].classList.add("fake");
+    gsap.from(t[2],{x:"40",opacity:0,duration:0.9,ease:"ease"});
+}
+);
+
+logo[2].addEventListener("mouseleave",()=>{
+    t[2].classList.remove("fake");
+})
+
+logo[3].addEventListener("mouseenter",()=>{
+    t[3].classList.add("fake");
+    gsap.from(t[3],{x:"40",opacity:0,duration:0.9,ease:"ease"});
+}
+);
+
+logo[3].addEventListener("mouseleave",()=>{
+    t[3].classList.remove("fake");
 })
