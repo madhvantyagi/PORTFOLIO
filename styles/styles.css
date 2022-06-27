@@ -199,11 +199,11 @@ body{
     left: 13vw;
     height: 50vh;
     width: 25vw;
-    background: rgb(75,59,107);
-    background: linear-gradient(315deg, rgb(6, 0, 10) 4%, rgb(17, 7, 35) 46%, rgba(6, 0, 10) 96%);
+    /* background: rgb(75,59,107); */
+    /* background: linear-gradient(315deg, rgb(6, 0, 10) 4%, rgb(17, 7, 35) 46%, rgba(6, 0, 10) 96%); */
 
-    /* background: rgb(48,48,48); */
-    /* background: linear-gradient(315deg, rgba(48,48,48,1) 4%, rgba(189,189,189,1) 46%, rgba(48,48,48,1) 96%); */
+    background: rgb(48,48,48);
+    background: linear-gradient(315deg, rgba(48,48,48,1) 4%, rgba(189,189,189,1) 46%, rgba(48,48,48,1) 96%);
     border-radius: 9px;
     box-shadow: 0 8px 10px rgba(0, 0, 0.8, 10);
     backdrop-filter: blur(5px);
