@@ -692,6 +692,7 @@ display: none;
     width: 40vw;
     transform:translate(50vw,-4vh);
     /* border: pink solid 1px; */
+    /* background-color: #041a12; */
     flex-direction: column;
 }
 
@@ -699,7 +700,14 @@ display: none;
     display: flex;
 }
 
-
+.screen-chip-plate{
+    /* border: purple solid 1px; */
+    padding: 3vh 1vw;
+    border-radius: 8px;
+    background-color: rgb(0, 34, 23);
+    width: 40vw;
+    height: 25vh;
+}
 
 .screen-pins-all{
     position: relative;
