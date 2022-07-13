@@ -1,0 +1,5 @@
+bg - crimson black - all
+boy girl page font - verdana | No BG
+
+BG texts - align to see complete
+Alginment in Arduino page - Looking rough rn.
