@@ -21,6 +21,7 @@ body{
     cursor: none;
 }
 
+/* One */
 
 #frt-div{
     background-image: url(/home-map-bg.svg);
@@ -34,11 +35,13 @@ body{
     /* border:solid 2px yellow; */
 }
 
+
 .nav-bar{
     font-weight: lighter;
     font-size: 2.6vh;
     list-style: none; 
 }
+
 
 .outside-div{
     position: fixed;
@@ -51,16 +54,18 @@ body{
     z-index: 999;
 }
 
+
 .nav-bar-item{
     cursor: pointer;
     margin-right:3.5%;
     display: inline;
 }
 
+
 #hello{
     /* color:var(--color); */
-
 }
+
 
 .home-intro{
     /* border:solid 2px red; */
@@ -75,6 +80,7 @@ body{
     -webkit-background-clip: text; */
 }
 
+
 .web-intro{
     position:absolute;
     display: inline-block;
@@ -83,6 +89,7 @@ body{
     right:18vw;
     bottom:10vh;
 }
+
 
 #web{
     font-family: 'Montserrat', sans-serif;
@@ -93,6 +100,7 @@ body{
     bottom :0vh;
 }
 
+
 .widden{
     color:var(--color);
     font-size: calc(2vw + 3vh);
@@ -101,10 +109,13 @@ body{
     font-family: 'Neonderthaw', cursive;
 }
 
+
 .who-am-i{
     font-size: calc(3vw + 4vh);
  
 }
+
+
 #madhavan{
     background-image: linear-gradient(150deg, #B960FF 0%, #a01666 100%);
     -webkit-background-clip: text;
@@ -114,6 +125,14 @@ body{
    
 }
 
+.loc-logo{
+    position: relative;
+    top: 26vh;
+    left: 20.5vw;
+    opacity: 80%;
+    z-index: 1;
+    height: 7vh;
+}
 
 
 /* <--------- testing css --------->   */
@@ -124,12 +143,318 @@ body{
 
 }
 
-/* two */
+/* Two */
 
 .two{
     /* border:solid 2px red; */
     position: relative;
 }
+
+.fake{
+    display:unset;
+   }
+
+@keyframes rotate {
+    0%{
+        transform: rotateX(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* terminal part */
+.outer{
+margin:calc(10vh + 5vw) 0vh 0vh 1.5vw;
+    width: 40vw;
+    height: 50vh;
+
+    background-color: #00000097;
+    z-index: 111;
+    /* transform: translateY(20vh); */
+    
+    border-radius: 0.5vw;
+    box-shadow: 3px 3px 3px 3px #0000005f;
+}
+
+.top{
+    /* border: green 1px solid; */
+    border-radius: 0.5vw 0.5vw 0 0;
+    display: flex;
+    background-color: #ba60fff0;
+    width:40vw;
+    height: 3vh;
+    padding: 0.5vh 0vw 4.2vh 1.2vw;
+    position: relative;
+}
+
+.circle{
+    margin: 1vh 0.25vw;
+    height: 1.7vh;
+    width: 1.7vh;
+    border-radius: 100%;
+}
+
+#circle-1{
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+#circle-2{
+    background-color: rgb(255, 255, 0, 0.7);
+}
+
+#circle-3{
+    background-color: rgb(0, 255, 0, 0.7);
+}
+
+.code-box{
+    /* border:solid 2px rgb(186, 186, 186); */
+    color:rgba(255, 255, 255, 0.801);
+    font-family: 'Abel', sans-serif;
+    font-size: calc(0.6vw + 0.9vh);
+    padding: 1.3vh 0vh 0vh 1.3vh;
+}
+
+#code-box-parent{
+    /* border:solid 2px rgb(186, 186, 186); */
+    height: 44.7vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+
+#code-box-parent::-webkit-scrollbar{
+display: none;
+}
+
+.default-text{
+    /* border:solid 2px rgb(186, 186, 186); */
+    color:rgba(255, 255, 255, 0.815);
+    font-family: 'Abel', sans-serif;
+    font-size: calc(0.6vw + 0.9vh);
+    padding: 1.3vh 0vh 0vh 1.3vh;
+}
+
+.terminal-title{
+    padding-top: 5px;
+    text-align: center;
+    position: absolute;
+    width:37.5vw;
+    /* border: 1px solid green; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: calc(1vh + 0.5vw);
+    color: #000000;
+}
+   
+.temp_terminal::after{
+    
+        content: "";
+        /* position: absolute; */
+        height:calc(1.5em+3vw);
+        border-right: solid 4px #ffffff;
+        animation: terminal 150ms infinite ease;
+}
+
+@keyframes terminal{
+    0%{
+        opacity: 0;
+    }
+
+
+    90%{
+        opacity: 1;
+    }
+}
+   
+   /* buttons */
+#term-btn{
+    display: flex;
+    flex-direction:column;
+    /* border:solid 2px rgb(0, 238, 255); */
+}
+
+.mainbtn{
+    /* border:solid 2px purple; */
+    display: flex;
+    justify-content: center;
+}
+.ard-btn{
+    margin: 2vh 10px 0  0;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #41215af0;
+    border-radius: 3px;
+}
+   
+/* arduino  */
+.arduino{
+    /* border:solid 2px rgb(0, 224, 11); */
+    margin:5vw 0vw 0vw 25vw;
+    width: calc(10vw + 10vh);
+    height: 100%;
+
+}
+
+.arduino img{
+    width: 100%;
+    height: auto;
+    
+}
+   
+.flex_terminal{
+    display: flex;
+}
+
+/* terminal-screen */
+
+.screen-dec{
+    right: 10vw;
+    bottom: 0vh;
+
+    position: absolute;
+    z-index: 1;
+
+    height: 30vh;
+    width: 40vw;
+    /* border: 1px solid red; */
+}
+
+.screen{
+    display: flex;
+    width: 40vw;
+    transform:translate(50vw,-4vh);
+    /* border: pink solid 1px; */
+    /* background-color: #041a12; */
+    flex-direction: column;
+}
+   
+.screen-row-flex{
+    display: flex;
+}
+
+.screen-chip-plate{
+    /* border: purple solid 1px; */
+    padding: 3vh 1vw;
+    border-radius: 8px;
+    background-color: rgb(0, 34, 23);
+    width: 40vw;
+    height: 25vh;
+}
+
+.screen-pins-all{
+    position: relative;
+    /* border: 1px solid greenyellow; */
+    height: 1vh;
+    max-width: 40vw;
+    display: flex;
+    flex-direction: row;
+}
+   
+.screen-pin{
+    background-color: gainsboro;
+    width: 2px;
+    height: 1vh;
+    margin-left: 8px;
+}
+
+#screen-pin1{
+    margin-left: 4vw;
+}
+
+.screen-pin-type-2{
+    border-radius: 2px 2px 0px 0px;
+    position: absolute;
+    background-color: #979797;
+    width: 1.5vw;
+    height: 0.4vh;
+    bottom: 0;
+    margin-left: 22vw;
+}
+   
+#screen-pin-type-2-1{
+    margin-left: 25vw;
+}
+
+#screen-pin-type-2-2{
+    margin-left: 28vw;
+}
+
+.screen-casing{
+    background-color: #070707e2;
+    border-radius: 3px;
+    width: 38vw;
+    height: 19vh;
+    padding: 4vh;
+    border: dotted 1px #ffffff3a;
+    overflow-y: hidden;
+}
+   
+.screen-screen{
+    border: dotted 1px #0000003a;
+    border-radius: 7px;
+    position: relative;
+
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    overflow-y: hidden;
+    background-color: #10382a;
+    color: #000000d5;
+    width: 100%;
+    height: 11vh;
+    font-weight: bold;
+}
+   
+   
+#screen-screen-text{
+    position: absolute;
+    padding: 3.1vh 1vh;
+    font-size: calc(1vh + 1vw);
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+
+.right-pins-all{
+    position: relative;
+    width: 10vw;
+    height: 25vh;
+    /* border: 1px yellow solid; */
+}
+
+.right-screen-pin{
+    position: absolute;
+    width: 0.5vw;
+    height: 1px;
+    background-color: wheat;
+}
+   
+#right-screen-pin1{
+    position: absolute;
+    top: 3vh;
+}
+
+#right-screen-pin2{
+    position: absolute;
+    top: 4vh;
+}
+
+#right-screen-pin3{
+    position: absolute;
+    top: 5vh;
+}
+   
+.right-screen-pin-type2{
+    position: absolute;
+    top: 11vh;
+    width: 0.3vw;
+    height: 3.5vh;
+    background-color: rgb(0, 18, 77);    
+    border-radius: 0px 3px 3px 0px;
+}
+   
 
 .filler-iot{
     font-size: calc(9vh + 15vw);
@@ -138,25 +463,21 @@ body{
     -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(255, 255, 255, 0.213);
+
     position: absolute;
     top: 3vh;
     left: 3vw;
-
-
 }
 
-/* three */
+/* Three */
 
 .three{
     /* border:solid 2px blue; */
     position: relative;
     /* overflow-y: scroll; */
     overflow: hidden;
-
-
-   
-   
 }
+
 
 .boy-talking{
     /* border: 1px solid brown; */
@@ -164,12 +485,29 @@ body{
     top: 20vh;
     left: 35vw;
 }
+
+
 .girl-talking{
     position: absolute;
     top: 20vh;
     right: 32vw;
     /* border: 1px solid brown; */
 
+}
+
+.boy-girl-btn {
+    background-color: #ba60ff75;
+    color: rgb(255, 255, 255);
+
+    padding: 10px 15px;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-size: 2vh;
+    position: absolute;
+    bottom: 27vh;
+    right: 18vw;
 }
 
 #eqn1{
@@ -181,6 +519,7 @@ body{
     height: 4vh;
     width: auto;
 }
+
 
 #eqn2{
     position: absolute;
@@ -199,18 +538,13 @@ body{
     left: 13vw;
     height: 50vh;
     width: 25vw;
-<<<<<<< HEAD
-    background-color: rgba(0, 0, 0, 0.694);
-=======
-
->>>>>>> 9d7aa3151ff0eefaabd3190be3f9fae6309e538d
+    /* background-color: #080210b6; */
+    background: rgba(8, 2, 16, 0.553);
+    background: linear-gradient(313deg, rgba(8, 2, 16, 0.774) 32%, rgba(16, 3, 34, 0.827) 51%, rgba(8,2,16,0.774) 74%);
     border-radius: 9px;
     box-shadow: 0 8px 10px rgba(0, 0, 0.8, 10);
     z-index: 9;
-
- 
 }
-
 
 
 .leetcode-logo{
@@ -218,10 +552,12 @@ body{
     /* border: 1px solid red; */
 }
 
+
 .leetcode-heading{
     margin: auto;
     /* border: 1px solid red; */
 }
+
 
 .leetcode-stats{
     /* border: 1px solid red; */
@@ -232,6 +568,7 @@ body{
     height: 18vh;
 }
 
+
 .leetcode-btn{
     display: flexbox;
     position: absolute;
@@ -239,9 +576,10 @@ body{
     left: 8vw;
 }
 
+
 .leetcode-btn a{
     text-decoration: none;
-    background-color: #13be1e;
+    background-color: #6313be;
     cursor: pointer;
     color: #fff;
     border-radius: 3vh;
@@ -251,6 +589,7 @@ body{
     font-weight: 100;
 }
 
+
 #leetcode-logo-img{
     display: block;
     margin-top: 2vh;
@@ -258,6 +597,7 @@ body{
     margin-right: auto;
     width: 30%;
 }
+
 
 .project-badge{
     position: absolute;
@@ -270,17 +610,19 @@ body{
     height: 30vh;
     width: 40vw;
 
-    background: rgb(75,59,107);
-    background: radial-gradient(circle, rgba(75,59,107,1) 0%, rgba(19,2,34,1) 97%);
+    background: rgba(8, 2, 16, 0.553);
+    background: linear-gradient(313deg, rgba(8, 2, 16, 0.774) 32%, rgba(16, 3, 34, 0.827) 51%, rgba(8,2,16,0.774) 74%);
     
     border-radius: 8px;
     box-shadow: 0 8px 10px rgba(0, 0, 0.8, 10);
     backdrop-filter: blur(5px);
 }
 
+
 .project-badge-about{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 
 .project-badge-img{
     padding: 1vh;
@@ -292,9 +634,11 @@ body{
     margin-right: 3vw;
 }
 
+
 .rand-img{
     height: 20vh;
 }
+
 
 .four{
     /* border:solid 2px green; */
@@ -494,13 +838,10 @@ body{
     /* padding-right:4vw; */
     margin-right: 2vw;
     margin-bottom:2vh;
-    
 }
 
 
-
 .contact-connect-logo{
-   
     width: 20%;
     height: 20%;
     margin-left: auto;
@@ -516,310 +857,6 @@ body{
     margin-left: auto;
     padding-right: -100px;
     display: none;
-}
-.fake{
- display:unset;
-}
-@keyframes rotate {
-    0%{
-       transform: rotateX(0deg);
-    }
-
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
-
-
-
-
-/* terminal part */
-.outer{
- margin:calc(10vh + 5vw) 0vh 0vh 1.5vw;
-    width: 40vw;
-    height: 50vh;
-
-    background-color: #000000e4;
-    z-index: 111;
-    /* transform: translateY(20vh); */
-   
-    border-radius: 0.5vw;
-    box-shadow: 3px 3px 3px 3px #0000005f;
-}
-
-.top{
-    /* border: green 1px solid; */
-    border-radius: 0.5vw 0.5vw 0 0;
-    display: flex;
-    background-color: #ba60fff0;
-    width:40vw;
-    height: 3vh;
-    padding: 0.5vh 0vw 4.2vh 1.2vw;
-    position: relative;
-}
-
-.circle{
-    margin: 1vh 0.25vw;
-    height: 1.7vh;
-    width: 1.7vh;
-    border-radius: 100%;
-}
-
-#circle-1{
-    background-color: rgb(0, 0, 0);
-}
-
-#circle-2{
-    background-color: rgb(150, 150, 150);
-}
-
-#circle-3{
-    background-color: rgb(26, 108, 112);
-}
-
-.code-box{
-    /* border:solid 2px rgb(186, 186, 186); */
-    color:rgba(255, 255, 255, 0.801);
-    font-family: 'Abel', sans-serif;
-    font-size: calc(0.6vw + 0.9vh);
-    padding: 1.3vh 0vh 0vh 1.3vh;
-}
-
-#code-box-parent{
-    /* border:solid 2px rgb(186, 186, 186); */
-    height: 44.7vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    text-align:justify;
-}
-#code-box-parent::-webkit-scrollbar{
-display: none;
-}
-
-.default-text{
-    /* border:solid 2px rgb(186, 186, 186); */
-    color:rgba(255, 255, 255, 0.815);
-    font-family: 'Abel', sans-serif;
-    font-size: calc(0.6vw + 0.9vh);
-    padding: 1.3vh 0vh 0vh 1.3vh;
-}
-
-.terminal-title{
-    text-align: center;
-    position: absolute;
-    width:37.5vw;
-    /* border: 1px solid green; */
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: calc(1vh + 0.5vw);
-    color: #ffffff65;
-}
-
-
-.temp_terminal::after{
-    
-        content: "";
-        /* position: absolute; */
-        height:calc(1.5em+3vw);
-        border-right: solid 4px #ffffff;
-        animation: terminal 150ms infinite ease;
-}
-
-@keyframes terminal{
-    0%{
-        opacity: 0;
-    }
- 
- 
-    90%{
-        opacity: 1;
-    }
-}
-
-/* buttons */
-#term-btn{
-    display: flex;
-    flex-direction:column;
-    /* border:solid 2px rgb(0, 238, 255); */
-}
-
-.mainbtn{
-    /* border:solid 2px purple; */
-    display: flex;
- justify-content: center;
-}
-.ard-btn{
-    margin: 2vh 10px 0  0;
-    background-color: black;
-    border-radius: 2px;
-}
-
-/* arduino  */
-.arduino{
-    /* border:solid 2px rgb(0, 224, 11); */
-     margin:5vw 0vw 0vw 25vw;
-     width: calc(10vw + 10vh);
-     height: 100%;
-
-}
-
-.arduino img{
-    width: 100%;
-    height: auto;
-   
-}
-
-.flex_terminal{
-    display: flex;
-}
-
-/* terminal-screen */
-
-.screen-dec{
-    right: 10vw;
-    bottom: 0vh;
-
-    position: absolute;
-    z-index: 1;
-
-    height: 30vh;
-    width: 40vw;
-    /* border: 1px solid red; */
-}
-
-.screen{
-    display: flex;
-    width: 40vw;
-    transform:translate(50vw,-4vh);
-    /* border: pink solid 1px; */
-    /* background-color: #041a12; */
-    flex-direction: column;
-}
-
-.screen-row-flex{
-    display: flex;
-}
-
-.screen-chip-plate{
-    /* border: purple solid 1px; */
-    padding: 3vh 1vw;
-    border-radius: 8px;
-    background-color: rgb(0, 34, 23);
-    width: 40vw;
-    height: 25vh;
-}
-
-.screen-pins-all{
-    position: relative;
-    /* border: 1px solid greenyellow; */
-    height: 1vh;
-    max-width: 40vw;
-    display: flex;
-    flex-direction: row;
-}
-
-.screen-pin{
-    background-color: gainsboro;
-    width: 2px;
-    height: 1vh;
-    margin-left: 8px;
-}
-
-#screen-pin1{
-    margin-left: 4vw;
-}
-
-.screen-pin-type-2{
-    border-radius: 2px 2px 0px 0px;
-    position: absolute;
-    background-color: #979797;
-    width: 1.5vw;
-    height: 0.4vh;
-    bottom: 0;
-    margin-left: 22vw;
-}
-
-#screen-pin-type-2-1{
-    margin-left: 25vw;
-}
-
-#screen-pin-type-2-2{
-    margin-left: 28vw;
-}
-
-.screen-casing{
-    background-color: #070707e2;
-    border-radius: 3px;
-    width: 38vw;
-    height: 19vh;
-    padding: 4vh;
-    border: dotted 1px #ffffff3a;
-    overflow-y: hidden;
-}
-
-.screen-screen{
-    border: dotted 1px #0000003a;
-    border-radius: 7px;
-    position: relative;
-
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Orbitron', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Source Code Pro', monospace;
-   overflow-y: hidden;
-    background-color: #10382a;
-    color: #000000d5;
-    width: 100%;
-    height: 11vh;
-    font-weight: bold;
-}
-
-
-#screen-screen-text{
-    position: absolute;
-    padding: 3.1vh 1vh;
-    font-size: calc(1vh + 1vw);
-    font-family: 'Source Code Pro', monospace;
-}
-
-
-
-.right-pins-all{
-    position: relative;
-    width: 10vw;
-    height: 25vh;
-    /* border: 1px yellow solid; */
-}
-
-.right-screen-pin{
-    position: absolute;
-    width: 0.5vw;
-    height: 1px;
-    background-color: wheat;
-}
-
-#right-screen-pin1{
-    position: absolute;
-    top: 3vh;
-}
-
-#right-screen-pin2{
-    position: absolute;
-    top: 4vh;
-}
-
-#right-screen-pin3{
-    position: absolute;
-    top: 5vh;
-}
-
-.right-screen-pin-type2{
-    position: absolute;
-    top: 11vh;
-    width: 0.3vw;
-    height: 3.5vh;
-    background-color: rgb(0, 18, 77);    
-    border-radius: 0px 3px 3px 0px;
 }
 
 
@@ -862,44 +899,45 @@ display: none;
     }
   }
  
-  .trans-div{
-      /* background-color: white; */
-      text-align: center;
-     padding:0px;
-    font-weight: 600;
-     /* border:solid 2px red; */
-     background: #000000;
-
-     /* transition: 0.8s ease; */
-   
-  }
-  .trans-div::before{
-      content: "HOME";
-      font-size: 4vh;
-      color:rgb(173,255,47); 
-     
-  }
-  .trans-div ul{
-      display: none;
-  }
-
-
-  .trans-div1{
+.trans-div{
     /* background-color: white; */
     text-align: center;
-   padding:0px;
-  font-weight: 600;
-   /* border:solid 2px red; */
-   background: #000000;
-   /* transition: 0.8s ease; */
- 
+    padding:0px;
+    font-weight: 600;
+    /* border:solid 2px red; */
+    background: #000000;
+    /* transition: 0.8s ease; */
 }
+
+.trans-div::before{
+    content: "HOME";
+    font-size: 4vh;
+    color:rgb(173,255,47); 
+     
+}
+
+.trans-div ul{
+    display: none;
+}
+
+
+.trans-div1{
+    /* background-color: white; */
+    text-align: center;
+    padding:0px;
+    font-weight: 600;
+    /* border:solid 2px red; */
+    background: #000000;
+    /* transition: 0.8s ease; */
+}
+
 .trans-div1::before{
     content: "ABOUT";
     font-size: 4vh;
     color:rgb(173,255,47); 
    
 }
+
 .trans-div1 ul{
     display: none;
 }
@@ -907,13 +945,13 @@ display: none;
 .trans-div2{
     /* background-color: white; */
     text-align: center;
-   padding:0px;
-  font-weight: 600;
-   /* border:solid 2px red; */
-      background: #000000;
-;
+    padding:0px;
+    font-weight: 600;
+    /* border:solid 2px red; */
+    background: #000000;
  
 }
+
 .trans-div2::before{
     content: "RESUME";
     font-size: 4vh;
@@ -924,23 +962,44 @@ display: none;
     display: none;
 }
 
+.para-us{
+    /* border:solid 2px red; */
+    position: absolute;
+    width:40vw;
+    height: 50vh;
+    top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 45px;
+    margin-top:110px;
+    margin-left:20px;
+}
 
+.para-us .logo-line-0{
+    /* border: red solid 1px; */
+    margin-left: 5vw;
+}
 
-  .para-us{
-      /* border:solid 2px red; */
-      width:40vw;
-      height: 50vh;
-      display: flex;
-     align-items: center;
-     line-height: 45px;
-     margin-top:110px;
-     margin-left:20px;
-  }
+.para-us .logo-line-1{
+    /* border: red solid 1px; */
+    margin-left: 4vw;
+}
 
-  .para-us p{
+.para-us .logo-line-2{
+    /* border: red solid 1px; */
+    margin-left: 12vw;
+}
+
+.para-us .logo-line-3{
+    /* border: red solid 1px; */
+    margin-left: 4vw;
+}
+
+.para-us p{
     background-image: linear-gradient(150deg, #B960FF 0%, #f4ecf1 100%);
     -webkit-background-clip: text;
     color: transparent;
     font-family: 'Cedarville Cursive', cursive;
     font-weight: 800;
-  }
+}
